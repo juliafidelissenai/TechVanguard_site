@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(6, 9, 207);
+    color: black;
+}
+.cabeçalho{
+    background-color: blue;
+    padding: 20px 40px;
+    display: flex; /* Eles passam a ficar na mesma fila*/
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid color(black)
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.menu {
+    color: aliceblue;
+    text-decoration: none;
+   
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.titulo-campo{
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: black;
+}
+.subtitulo{
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+.grade {
+    display: grid;/*Vai organizar todos os elementos(filhos) em linhas e colunas*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+.titulo-historia{
+    font-size: 20px;
+    color: aliceblue;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+.botao-cadastro{
+    display: block;
+    text-align: center;
+    background-color: rgb(127, 133, 255);
+    color: black;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.botao-cadastro :hover{
+    background-color: rgb(255, 0, 60);
+}
+.foto-empresa{
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.grade-curiosidades{
+    display: grid;/*Vai organizar todos os elementos(filhos) em linhas e colunas*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+
